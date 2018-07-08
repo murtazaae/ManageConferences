@@ -10,7 +10,10 @@ namespace ManageConferences.Services
         Task<IEnumerable<ConferenceModel>> GetAll();
         Task<ConferenceModel> GetById(int id);
         Task<StatisticsModel> GetStatistics();
+
+
         Task Add(ConferenceModel model);
+        
 
     }
 }

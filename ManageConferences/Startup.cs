@@ -26,7 +26,7 @@ namespace ManageConferences
             services.AddMvc();
             services.AddSingleton<IConferenceService, ConferenceMemoryService>();
             services.AddSingleton<IProposalServices, ProposalMemoryService>();
-            services.AddSingleton(x => new HttpClient { BaseAddress = new Uri("http://localhost:5000") });
+            services.AddSingleton(x => new HttpClient { BaseAddress = new Uri("http://localhost:5001") });
             services.Configure<GlobomanticsOptions>(configuration.GetSection("ManageConferences"));
         }
 
